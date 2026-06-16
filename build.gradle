@@ -10,9 +10,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.testng:testng:7.1.0'   // ← ЭТА СТРОЧКА ДОЛЖНА БЫТЬ!
+    testImplementation 'org.testng:testng:7.1.0'  // ← ДЛЯ TESTNG
 }
 
 test {
-    useTestNG()    // ← И ЭТА СТРОЧКА ТОЖЕ!
+    useTestNG()  // ← ИСПОЛЬЗУЕМ TESTNG
 }
