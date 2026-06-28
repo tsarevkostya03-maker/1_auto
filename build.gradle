@@ -9,10 +9,18 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation 'junit:junit:4.13'
+dependencies {dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.testng:testng:7.1.0'
 }
 
 test {
     useJUnit()
+=======
+    testImplementation 'org.testng:testng:7.1.0'  // ← ДЛЯ TESTNG
+}
+
+test {
+    useTestNG()  // ← ИСПОЛЬЗУЕМ TESTNG
+>>>>>>> 4a78f4924de1195a5c84dd29006cfa0f6104e796
 }
