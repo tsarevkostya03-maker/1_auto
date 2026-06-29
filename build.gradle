@@ -11,10 +11,8 @@ repositories {
 
 dependencies {
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.testng:testng:7.1.0'
 }
 
 test {
-    useJUnit()      // Для JUnit 4 тестов
-    useTestNG()     // Для TestNG тестов
+    useJUnit()
 }
