@@ -32,7 +32,7 @@ jobs:
         # При падении тестов этот шаг упадет, и весь CI станет красным ❌
 
       - name: Upload test reports
-        if: always()  # ← Загружаем отчёты даже при падении
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-reports
